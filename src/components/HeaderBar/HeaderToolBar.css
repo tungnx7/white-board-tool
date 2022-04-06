@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    gap: 0 20px;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.header-text {
+    font-size: 10px;
+}
+
+.header-item:hover {
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.header-item:focus {
+    color: blue;
+}
