@@ -1,19 +1,274 @@
-.header {
-    display: flex;
-    gap: 0 20px;
-    justify-content: center;
-    padding-top: 10px;
+.toolbar-icon {
+  color: white;
+  padding: 15px;
+  font-size: 30px;
 }
 
-.header-text {
-    font-size: 10px;
+.toolbar-icon-down {
+  font-size: 10px;
+  padding: 2px;
 }
 
-.header-item:hover {
-    border: 1px solid #ddd;
-    cursor: pointer;
+.toolbar-icon-red {
+  color: transparent;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 1px;
+  background-color: red;
+}
+.toolbar-icon-white {
+  color: transparent;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 1px;
+  background-color: white;
+}
+.toolbar-icon-yellow {
+  color: transparent;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 1px;
+  background-color: yellow;
+}
+.toolbar-icon-limesoap {
+  color: transparent;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 1px;
+  background-color: #7bed9f;
+}
+.toolbar-icon-skyblue {
+  color: transparent;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 1px;
+  background-color: #1e90ff;
+}
+.toolbar-icon-green {
+  color: transparent;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 1px;
+  background-color: green;
+}
+.toolbar-icon-black {
+  color: transparent;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 1px;
+  background-color: black;
+}
+.toolbar-icon-orange {
+  color: transparent;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 1px;
+  background-color: orange;
+}
+.toolbar-icon-brown {
+  color: transparent;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 1px;
+  background-color: brown;
+}
+.toolbar-icon-gray {
+  color: transparent;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 1px;
+  background-color: gray;
+}
+.toolbar-icon-purple {
+  color: transparent;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 1px;
+  background-color: purple;
+}
+.toolbar-icon-skirretgreen {
+  color: transparent;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 1px;
+  background-color: #4cd137;
+}
+.toolbar-icon-pumpkin {
+  color: transparent;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 1px;
+  background-color: #d35400;
+}
+.toolbar-icon-blue {
+  color: transparent;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 1px;
+  background-color: blue;
+}
+.toolbar-icon-pink {
+  color: transparent;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 1px;
+  background-color: pink;
+}
+.toolbar-icon-watermelon {
+  color: transparent;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 1px;
+  background-color: #ff4757;
 }
 
-.header-item:focus {
-    color: blue;
+.toolbar-icon:hover {
+  border-radius: 4px;
+  background-color: #bbb;
+  transition: all 0.05s linear;
+}
+
+.toolbar-text {
+  font-size: 10px;
+  text-transform: capitalize;
+  display: block;
+  margin-top: 10px;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: center;
+  background-color: gray;
+  position: relative;
+}
+
+.toolbar-item:hover {
+  cursor: pointer;
+}
+
+.item:active text {
+  color: aqua;
+}
+
+.isActive {
+  color: blue;
+}
+#box-draw,
+#box-stamp,
+#box-spotlight,
+#box-format,
+#box-clear,
+#box-save {
+  display: none;
+}
+
+.toolbar-select {
+  background-color: #fff;
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+#item-draw:hover + #box-draw {
+  display: block;
+}
+
+#item-stamp:hover + #box-stamp {
+  display: block;
+}
+#item-spotlight:hover + #box-spotlight {
+  display: block;
+}
+#item-format:hover + #box-format {
+  display: block;
+}
+#item-clear:hover + #box-clear {
+  display: block;
+}
+#item-save:hover + #box-save {
+  display: block;
+}
+
+#box-draw:hover {
+  display: block;
+}
+#box-stamp:hover {
+  display: block;
+}
+#box-spotlight:hover {
+  display: block;
+}
+#box-format:hover {
+  display: block;
+}
+#box-clear:hover {
+  display: block;
+}
+#box-save:hover {
+  display: block;
+}
+
+.toolbar-icon-draw {
+  position: relative;
+}
+
+.toolbar-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 200px;
+  flex-wrap: wrap;
+  position: absolute;
+  gap: 0px 10px;
+  background-color: green;
+  border-radius: 5px;
+  transform: translate(-50%, 80%);
+}
+
+.toolbar-list-format {
+  width: 220px;
+  height: 266px;
+  transform: translate(-40%, 30%);
+}
+
+.toolbar-list-stamp {
+  width: 150px;
+}
+
+.toolbar-list-spotlight {
+  width: 150px;
+  height: 50px;
+  transform: translate(-80%, 158%);
+}
+
+.toolbar-box-icon {
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+}
+
+.toolbar-clear-text {
+  font-size: 12px;
+  color: white;
+  height: 8px;
+  line-height: 0.8;
+}
+
+.toolbar-clear-text:hover {
+  cursor: pointer;
+  color: gray;
+}
+
+.toolbar-save {
+  cursor: pointer;
+  width: 180px;
+  color: white;
+}
+
+.toolbar-save span:hover {
+  color: gray;
 }
