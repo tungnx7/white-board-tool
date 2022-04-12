@@ -1,274 +1,135 @@
-.toolbar-icon {
-  color: white;
-  padding: 15px;
-  font-size: 30px;
+.ant-layout-header {
+  height: 90px;
 }
 
-.toolbar-icon-down {
-  font-size: 10px;
-  padding: 2px;
-}
-
-.toolbar-icon-red {
-  color: transparent;
-  border: 1px solid gray;
-  border-radius: 5px;
-  padding: 1px;
-  background-color: red;
-}
-.toolbar-icon-white {
-  color: transparent;
-  border: 1px solid gray;
-  border-radius: 5px;
-  padding: 1px;
-  background-color: white;
-}
-.toolbar-icon-yellow {
-  color: transparent;
-  border: 1px solid gray;
-  border-radius: 5px;
-  padding: 1px;
-  background-color: yellow;
-}
-.toolbar-icon-limesoap {
-  color: transparent;
-  border: 1px solid gray;
-  border-radius: 5px;
-  padding: 1px;
-  background-color: #7bed9f;
-}
-.toolbar-icon-skyblue {
-  color: transparent;
-  border: 1px solid gray;
-  border-radius: 5px;
-  padding: 1px;
-  background-color: #1e90ff;
-}
-.toolbar-icon-green {
-  color: transparent;
-  border: 1px solid gray;
-  border-radius: 5px;
-  padding: 1px;
-  background-color: green;
-}
-.toolbar-icon-black {
-  color: transparent;
-  border: 1px solid gray;
-  border-radius: 5px;
-  padding: 1px;
-  background-color: black;
-}
-.toolbar-icon-orange {
-  color: transparent;
-  border: 1px solid gray;
-  border-radius: 5px;
-  padding: 1px;
-  background-color: orange;
-}
-.toolbar-icon-brown {
-  color: transparent;
-  border: 1px solid gray;
-  border-radius: 5px;
-  padding: 1px;
-  background-color: brown;
-}
-.toolbar-icon-gray {
-  color: transparent;
-  border: 1px solid gray;
-  border-radius: 5px;
-  padding: 1px;
-  background-color: gray;
-}
-.toolbar-icon-purple {
-  color: transparent;
-  border: 1px solid gray;
-  border-radius: 5px;
-  padding: 1px;
-  background-color: purple;
-}
-.toolbar-icon-skirretgreen {
-  color: transparent;
-  border: 1px solid gray;
-  border-radius: 5px;
-  padding: 1px;
-  background-color: #4cd137;
-}
-.toolbar-icon-pumpkin {
-  color: transparent;
-  border: 1px solid gray;
-  border-radius: 5px;
-  padding: 1px;
-  background-color: #d35400;
-}
-.toolbar-icon-blue {
-  color: transparent;
-  border: 1px solid gray;
-  border-radius: 5px;
-  padding: 1px;
-  background-color: blue;
-}
-.toolbar-icon-pink {
-  color: transparent;
-  border: 1px solid gray;
-  border-radius: 5px;
-  padding: 1px;
-  background-color: pink;
-}
-.toolbar-icon-watermelon {
-  color: transparent;
-  border: 1px solid gray;
-  border-radius: 5px;
-  padding: 1px;
-  background-color: #ff4757;
-}
-
-.toolbar-icon:hover {
-  border-radius: 4px;
-  background-color: #bbb;
-  transition: all 0.05s linear;
+.toolbar-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0px;
 }
 
 .toolbar-text {
-  font-size: 10px;
-  text-transform: capitalize;
-  display: block;
-  margin-top: 10px;
+  font-size: 12px;
 }
 
-.toolbar {
-  display: flex;
-  justify-content: center;
-  background-color: gray;
-  position: relative;
+.toolbar-btn {
+  height: 65px;
+  width: 65px;
 }
 
-.toolbar-item:hover {
+.toolbar-btn.active{
+  border-color: orange;
+  color: orange;
+}
+
+.toolbar-icon {
+  font-size: 20px;
+}
+
+.toolbar-icon:hover {
   cursor: pointer;
+  color: #40a9ff;
 }
 
-.item:active text {
-  color: aqua;
+.toolbar-icon-down {
+  font-size: 15px;
+  margin-left: 5px;
 }
 
-.isActive {
-  color: blue;
+.toolbar-content-draw {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px 20px;
 }
-#box-draw,
-#box-stamp,
-#box-spotlight,
-#box-format,
-#box-clear,
-#box-save {
+.toolbar-content-stamp {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px 20px;
+}
+.toolbar-content-spot {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px 20px;
+}
+.toolbar-content-text {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px 10px;
+}
+
+.toolbar-content-clear {
+  font-size: 12px;
+}
+
+.toolbar-content-clear-item:hover {
+  cursor: pointer;
+  color: #40a9ff;
+}
+
+.toolbar-content-save {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+
+.toolbar-content-save-selected {
+  display: flex;
+  align-items: center;
+}
+
+input[type="file"] {
   display: none;
 }
 
-.toolbar-select {
-  background-color: #fff;
-  padding: 8px;
-  font-size: 16px;
-  border: none;
-  outline: none;
-  border: 1px solid gray;
-  border-radius: 10px;
+#file-view {
+  color: #40a9ff;
 }
 
-#item-draw:hover + #box-draw {
-  display: block;
+#file-view:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
-#item-stamp:hover + #box-stamp {
-  display: block;
-}
-#item-spotlight:hover + #box-spotlight {
-  display: block;
-}
-#item-format:hover + #box-format {
-  display: block;
-}
-#item-clear:hover + #box-clear {
-  display: block;
-}
-#item-save:hover + #box-save {
-  display: block;
+.toolbar-icon-save {
+  color: #40a9ff;
 }
 
-#box-draw:hover {
-  display: block;
-}
-#box-stamp:hover {
-  display: block;
-}
-#box-spotlight:hover {
-  display: block;
-}
-#box-format:hover {
-  display: block;
-}
-#box-clear:hover {
-  display: block;
-}
-#box-save:hover {
-  display: block;
+.toolbar-content-save-text {
+  margin: 0 15px 0 5px;
 }
 
-.toolbar-icon-draw {
-  position: relative;
+.toolbar-icon-down:hover {
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: #d4eafc;
 }
 
-.toolbar-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
-  width: 200px;
-  flex-wrap: wrap;
-  position: absolute;
-  gap: 0px 10px;
-  background-color: green;
-  border-radius: 5px;
-  transform: translate(-50%, 80%);
-}
-
-.toolbar-list-format {
-  width: 220px;
-  height: 266px;
-  transform: translate(-40%, 30%);
-}
-
-.toolbar-list-stamp {
-  width: 150px;
-}
-
-.toolbar-list-spotlight {
-  width: 150px;
-  height: 50px;
-  transform: translate(-80%, 158%);
-}
-
-.toolbar-box-icon {
-  padding: 5px;
-  width: 30px;
-  height: 30px;
-}
-
-.toolbar-clear-text {
+.toolbar-icon-down-box {
   font-size: 12px;
-  color: white;
-  height: 8px;
-  line-height: 0.8;
 }
 
-.toolbar-clear-text:hover {
+.toolbar-icon-down-box-heading {
+  color: #40a9ff;
+  font-weight: 400;
+}
+
+.toolbar-icon-down-box-item {
+  font-weight: 300;
+  margin-bottom: 0;
+  padding: 2px;
+}
+
+.toolbar-icon-down-box-item:hover {
   cursor: pointer;
-  color: gray;
+  border: 1px solid transparent;
+  background-color: #d4eafc;
+  outline: none;
 }
 
-.toolbar-save {
-  cursor: pointer;
-  width: 180px;
-  color: white;
+.ant-popover-inner-save {
+  margin-top: 20px;
 }
 
-.toolbar-save span:hover {
-  color: gray;
+#toolbar-btn-spotlight {
+  width: 75px;
 }
